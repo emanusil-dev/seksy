@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEKSY | O mais sexy de Angola</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--header area-->
+    <header>
+        <div class="logo">
+            <a href="/index.html">
+                <img src="./assets/img/random/seksy--logo--in.png" alt="SEKSY" id="logo"></a>
+        </div>
+
+        <nav class="navbar">
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="ri-menu-3-line" id="toggle"></i>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="" class="nav__link"><span>Sexshop</span></a></li>
+                <li><a href="" class="nav__link"><span>Sobre</span></a></li>
+                <li><a href="" class="nav__link"><span>Blog</span></a></li>
+                <li><a href="#" id="btn">Iniciar</a></li>
+            </ul>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                         const menuToggle = document.getElementById("menu-toggle");
+                         const menu = document.getElementById("menu");
+                         const icon = menuToggle.querySelector("i");
+                         
+                         menuToggle.addEventListener("click", function() {
+                             if (menu.style.display === "flex") {
+                                 menu.style.display = "none";
+                                 icon.classList.remove("ri-close-large-line");
+                                 icon.classList.add("ri-menu-3-line");
+                             } else {
+                                 menu.style.display = "flex";
+                                 icon.classList.remove("ri-menu-3-line");
+                                 icon.classList.add("ri-close-large-line");
+                             }
+                         });
+                     });
+                 </script>
+        </nav>
+
+
+    </header>
+    <!--end header area-->
+
+    <section class="hero">
+        <video class="video__bg" src="/assets/videos/seksy--girl.mp4" autoplay loop plays-inline></video>
+        <div class="info">
+            <h3>Despertando Prazer</h3>
+            <h1>Oi, Mundão. Sou <span class="highlight">SEKSY</span>!</h1>
+            <p></p>
+        </div>
+    </section>
+
+    <!--footer area-->
+    <footer>
+
+    </footer>
+    <!--end footer area-->
+
+</body>
+</html>

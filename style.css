@@ -1,0 +1,209 @@
+/*
+    Theme Name: Seksy Website Theme
+    Theme URI:
+    Version: 25.0.1
+    Author: Emanuel da Silva (EMANUSIL)
+    Author URI: www.emanusil.it.ao
+    Description: (EN) Wordpress theme for adult content website. |
+     (PT) Template de Wordpress para Site de conteúdo adulto.
+
+*/
+
+/*==== CONFIGS ====*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* bg */
+    --first-bg: #2b005a;
+    --second-bg: #96176d;
+    --thrid-bg: #dc2073;
+    --fourth-bg: #e58bb9;
+    --fifth-bg: #424150;
+    --sixth-bg: #9291b1;
+    --seventh-bg: #ced0d7;
+    --eight-bg: #f0f0f0;
+    --nineeth-bg: #1e1e24;
+    /* Txt */
+    --first-color: #1e1e24;
+    --second-color: #2b005a;
+    --thrid-color: #96176d;
+    --fourth-color: #dc2073;
+    --fifth-color: #ced0d7;
+    --sixth-color: #f0f0f0;
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+/*==== END CONFIGS ====*/
+
+/*==== BODY ====*/
+
+/*==== END BODY ====*/
+
+/*==== HEADER ====*/
+header {
+    background: var(--fourth-color);
+    display: flex;
+    width: 100%;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+}
+.menu li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--sixth-color);
+    justify-content: space-around;
+    font-size: 18px;
+    padding: 15px;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 20;
+}
+#logo{
+    width: 25%;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.menu li a {
+    text-decoration: none;
+    color: var(--eight-bg);
+    font-size: 18px;
+}
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: var(--primary-text-color);
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}
+
+#btn{
+    background: var(--first-bg);
+    width: 100%;
+    height: 5vh;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#btn a{
+    text-decoration: none;
+    color: var(--sixth-color);
+    font-family: 'Montserrat', sans-serif;
+}
+/*==== END HEADER ====*/
+
+/*==== HERO ====*/
+.hero{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video__bg{
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    opacity: .35;
+}
+
+.info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    font-weight: 300;
+    font-size: 1.3rem; 
+    color: var(--eight-bg);
+}
+h1{
+    color: var(--eight-bg);
+}
+
+.highlight{
+    color: var(--fourth-color);
+}
+/*==== END HERO ====*/
+
+/*==== SECTION:  ====*/
+/*==== END SECTION: ====*/
+
+/*==== FOOTER ====*/
+/*==== END FOOTER ====*/
+
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 30px 5%;
+    }
+
+    .hero {
+        padding: 30px 5%;
+    }
+
+    .image img {
+        width: 25%;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: relative;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        background: var(--primary-bg);
+        text-align: center;
+        padding: 15px 0;
+    }
+    .menu.show {
+        display: flex;
+    }
+    .menu-toggle {
+         display: block;
+    }
+
+   }
